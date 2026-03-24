@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-white">
+<head>
+    <link rel="icon" type="image/png" href="images/logo1.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXO FOCUS</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="h-full font-inter">
+
+    <!-- NAVBAR -->
+    <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+
+                <div class="flex items-center">
+
+                    <img class="h-12 w-12"
+                        src="images/logo1.png"
+                        alt="logo">
+
+                    <div class="ml-10 flex items-baseline space-x-4">
+
+                        <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900">
+                            Menu
+                        </a>
+                        <a href="contacto.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">
+                            Contacto
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="text-center py-24 bg-gray-100">
+    <h1 class="text-5xl font-bold mb-4">
+        Hola, soy Alejo 👋
+    </h1>
+
+    <p class="text-xl text-gray-600 mb-6">
+        Desarrollador de software y creador de herramientas con Python
+    </p>
+
+    <a href="#proyectos"
+       class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+        Ver mis proyectos
+    </a>
+</section>
+    <main class="text-center mt-20 px-6">
+
+        <h1 class="text-4xl font-bold">
+            Bienvenido a mi portafolio
+        </h1>
+
+        <p class="mt-4 text-lg text-gray-600">
+            Aquí encontrarás algunos de mis proyectos más destacados y habilidades.
+        </p>
+
+        <p class="mt-4">
+            Para ver mis proyectos, haz clic en el enlace de "Proyectos" en la barra de navegación.
+        </p>
+
+        <p class="mt-2">
+            Si deseas contactarme, puedes hacer clic en "Contacto".
+        </p>
+
+    </main>
+
+</body>
+<link rel="stylesheet" href="style.css">
+<section id="proyectos" class="py-20 bg-white">
+
+<h2 class="text-3xl font-bold text-center mb-12">
+Mis proyectos
+</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-10">
+
+<div class="bg-gray-100 p-6 rounded-xl shadow">
+<h3 class="text-xl font-semibold mb-2">Editor de Fondo IA</h3>
+<p class="text-gray-600 mb-4">
+Programa que elimina el fondo de imágenes automáticamente.
+</p>
+
+<a href="C:\Users\Usuario\Documents\Programacion\pagina_nexo\editorfondo_setup.exe" 
+   download
+   class="bg-blue-600 text-white px-4 py-2 rounded">
+   Descargar
+</a>
+
+</div>
+
+</div>
+</section>
+<footer class="bg-gray-800 text-white py-6 mt-20">
+
+<div class="max-w-7xl mx-auto flex justify-between items-center px-6">
+
+<p>© 2026 Alejo Oviedo</p>
+
+<div class="flex space-x-6">
+
+<a class="logo_ig" href="https://www.instagram.com/nexo.focus/" target="_blank">
+<img src="images/logo_ig.png" class="w-10 h-10 hover:scale-100 transition">
+</a>
+
+<a class="logo_git" href="https://github.com/TUUSUARIO" target="_blank">
+<img src="images/logo_github.png" class="w-10 h-10 hover:scale-100 transition">
+</a>
+
+</div>
+
+<div class="text-sm text-gray-400">
+Visitas: <span id="visitas">0</span>
+</div>
+
+</div>
+
+<script>
+fetch('https://api.countapi.xyz/hit/nexofocus/visitas')
+.then(res => res.json())
+.then(res => {
+document.getElementById('visitas').innerText = res.value;
+});
+</script>
+
+</footer>
+</html>

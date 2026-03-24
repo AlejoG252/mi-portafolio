@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+scroll-behavior:smooth;
+}
+img {
+    display: inline-block;
+    margin-top: 10px;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+}
+.logo_ig {
+    display: flex;
+    width: 62px;
+    height: 62px;
+    image-resolution: 20px;
+}
+.logo_git {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    image-rendering: 20px;
+}
